@@ -1,22 +1,22 @@
-# 📰 Blog Dashboard Frontend (Next.js + Shadcn/UI)
+# Blog Dashboard Frontend (Next.js + Shadcn/UI)
 
-Proyek ini adalah **frontend dashboard** sederhana untuk mengelola dan menampilkan artikel blog.  
-Dibangun menggunakan **Next.js (App Router)** dan **shadcn/ui** untuk tampilan modern dan responsif.
-
----
-
-## 🚀 Fitur Utama
-
-- ✅ Menampilkan daftar artikel dalam bentuk tabel.
-- ✏️ Fitur edit artikel.
-- 🗑️ Update status artikel menjadi "Thrash".
-- 👀 Halaman preview untuk menampilkan artikel yang berstatus **Publish**.
-- 🔄 Pagination dengan parameter `limit` dan `offset`.
-- 💅 Desain elegan menggunakan **shadcn/ui** dan **Tailwind CSS**.
+This project is a simple frontend dashboard for managing and displaying blog articles.
+Built using Next.js (App Router) and shadcn/ui for a modern and responsive interface.
 
 ---
 
-## 🧩 Teknologi yang Digunakan
+## Main Features
+
+- Display article list in a table format.
+- Edit article feature.
+- Update article status to “Thrash.”
+- Preview page to display articles with Publish status.
+- Pagination with limit and offset parameters.
+- Elegant design using shadcn/ui and Tailwind CSS.
+
+---
+
+## Technologies Used
 
 - **Next.js 14 (App Router)**
 - **React 18**
@@ -26,35 +26,35 @@ Dibangun menggunakan **Next.js (App Router)** dan **shadcn/ui** untuk tampilan m
 
 ---
 
-## 📁 Struktur Folder
+## Folder Structure
 
 ```
 src/
  ├── app/
- │   ├── layout.js              # Layout utama
- │   ├── page.js                # Dashboard utama (tabel artikel)
+ │   ├── layout.js              # Main layout
+ │   ├── page.js                # Main dashboard (article table)
  │   ├── posts/
- │   │   ├── page.js            # Halaman index artikel
- │   │   ├── add/page.js        # Halaman tambah artikel
- │   │   ├── edit/[id]/page.js  # Halaman edit artikel
- │   ├── preview/page.js        # Halaman preview artikel publish
- │   └── globals.css            # Styling global
+ │   │   ├── page.js            # Article index page
+ │   │   ├── add/page.js        # Add new article page
+ │   │   ├── edit/[id]/page.js  # Edit article page
+ │   ├── preview/page.js        # Preview published articles page
+ │   └── globals.css            # Global styling
  ├── components/
- │   ├── datatable.js           # Konfigurasi kolom tabel
- │   ├── ui/                    # Komponen dari shadcn/ui
+ │   ├── datatable.js           # Table column configuration
+ │   ├── ui/                    # Components from shadcn/ui
  ├── lib/
- │   └── api.js                 # Konfigurasi endpoint API eksternal
+ │   └── api.js                 # External API configuration
  └── README.md
 ```
 
 ---
 
-## 🧭 Cara Menjalankan
+## How to Run
 
 1. **Clone repository**
    ```bash
-   git clone https://github.com/farisfadhail/sv-be.git
-   cd sv-be
+   git clone https://github.com/farisfadhail/sv-fe.git
+   cd sv-fe
    ```
 
 2. **Install dependencies**
@@ -62,44 +62,46 @@ src/
    npm install
    ```
 
-3. **Jalankan project**
+3. **Run the project**
    ```bash
    npm run dev
    ```
 
-4. Buka di browser  
-   👉 [http://localhost:3000](http://localhost:3000)
+4. Open in your browser
+   [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🧱 Komponen Utama
+## Main Components
 
-| Komponen | Deskripsi |
-|-----------|------------|
-| **DataTable** | Menampilkan data artikel dengan pagination |
-| **Button (shadcn)** | Digunakan untuk aksi edit & thrash |
-| **PreviewCard** | Menampilkan artikel berstatus publish dengan tampilan penuh |
-| **Pagination Controls** | Mengatur navigasi antar halaman data |
+| Component               | Description                                |
+| ----------------------- | ------------------------------------------ |
+| **DataTable**           | Displays article data with pagination      |
+| **Button (shadcn)**     | Used for edit & thrash actions             |
+| **PreviewCard**         | Displays published articles in full layout |
+| **Pagination Controls** | Manages data navigation between pages      |
 
----
-
-## 🪄 Contoh Endpoint API (Backend)
-
-Meskipun proyek ini hanya frontend, berikut contoh bentuk endpoint yang dikonsumsi:
-
-| Endpoint | Metode | Deskripsi |
-|-----------|--------|-----------|
-| `/article?limit=10&offset=0` | GET | Mendapatkan daftar artikel |
-| `/article` | POST | Create artikel |
-| `/article/:id` | GET | Mendapatkan detail artikel |
-| `/article/:id` | PUT | Update artikel (misal: `thrash`) |
 
 ---
 
-## 📸 Tampilan
+## Example Backend API Endpoints
+
+Although this project is frontend-only, below are examples of API endpoints consumed:
+
+| Endpoint                     | Method | Description                            |
+| ---------------------------- | ------ | -------------------------------------- |
+| `/article?limit=10&offset=0` | GET    | Retrieve article list                  |
+| `/article`                   | POST   | Create article                         |
+| `/article/:id`               | GET    | Retrieve article details               |
+| `/article/:id`               | PUT    | Update article (e.g., set to `thrash`) |
+
+
+---
+
+## Screenshots
 
 ### Dashboard
-Menampilkan daftar artikel dengan aksi edit dan thrash.
+Displays a list of articles with edit and thrash actions.
 
 ### Preview
-Menampilkan artikel berstatus publish dengan layout lebar penuh.
+Displays published articles in a full-width layout.
