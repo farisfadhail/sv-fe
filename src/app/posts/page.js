@@ -57,7 +57,7 @@ export const columns = [
       const article = row.original;
       const [loading, setLoading] = useState(false);
       const [message, setMessage] = useState('');
-      const [open, setOpen] = useState(false); // kontrol dialog
+      const [open, setOpen] = useState(false);
 
       const handleThrash = async () => {
         setLoading(true);
@@ -65,11 +65,13 @@ export const columns = [
 
         try {
           const res = await fetch(
-              `http://localhost:8080/api/article/${article.id}`, {
+              `http://localhost:8080/api/article/${article.id}`,
+              {
                 method: 'PUT',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({status: 'thrash'}),
-              });
+              },
+          );
 
           if (!res.ok) throw new Error('Failed to update status');
 
@@ -106,8 +108,8 @@ export const columns = [
                 <AlertDialogHeader>
                   <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
                   <AlertDialogDescription>
-                    This action will move the article to <b>Thrash</b>.
-                    You can recover it later if needed.
+                    This action will move the article to <b>Thrash</b>. You can
+                    recover it later if needed.
                   </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
@@ -163,37 +165,52 @@ export default function Posts() {
   }, [data, statusFilter]);
 
   return (
-      <main>
+      <main className="w-full">
         <Tabs
             defaultValue="all"
             value={statusFilter}
             onValueChange={setStatusFilter}
             className="w-full"
         >
-          <div>
+          <div className="flex justify-between items-center mb-4">
             <Link href="/posts/add">
-              <Button className="mb-4 cursor-pointer">Add New Post</Button>
+              <Button className="cursor-pointer">Add New Post</Button>
             </Link>
           </div>
+
           <TabsList className="mb-4">
-            <TabsTrigger value="all"
-                         className="cursor-pointer">All</TabsTrigger>
-            <TabsTrigger value="draft"
-                         className="cursor-pointer">Draft</TabsTrigger>
-            <TabsTrigger value="publish"
-                         className="cursor-pointer">Publish</TabsTrigger>
-            <TabsTrigger value="thrash"
-                         className="cursor-pointer">Thrash</TabsTrigger>
+            <TabsTrigger value="all" className="cursor-pointer">
+              All
+            </TabsTrigger>
+            <TabsTrigger value="draft" className="cursor-pointer">
+              Draft
+            </TabsTrigger>
+            <TabsTrigger value="publish" className="cursor-pointer">
+              Publish
+            </TabsTrigger>
+            <TabsTrigger value="thrash" className="cursor-pointer">
+              Thrash
+            </TabsTrigger>
           </TabsList>
 
           <TabsContent value={statusFilter}>
-            {loading ? (
-                <div className="text-center p-8">Loading...</div>
-            ) : error ? (
-                <div className="text-center text-red-500 p-8">{error}</div>
-            ) : (
-                <DataTable columns={columns} data={filteredData}/>
-            )}
+            <div className="min-h-[400px] w-full overflow-x-auto">
+              {loading ? (
+                  <div
+                      className="text-center p-8 text-gray-500">Loading...</div>
+              ) : error ? (
+                  <div className="text-center text-red-500 p-8">{error}</div>
+              ) : filteredData.length === 0 ? (
+                  <div
+                      className="text-center text-gray-400 p-12 border rounded-md bg-muted/30">
+                    No data available for this status
+                  </div>
+              ) : (
+                  <div className="w-full">
+                    <DataTable columns={columns} data={filteredData}/>
+                  </div>
+              )}
+            </div>
           </TabsContent>
         </Tabs>
       </main>
