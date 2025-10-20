@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Peran Teknologi Blockchain dalam Transformasi Digital Pemerintahan",
+    "content": "Teknologi blockchain semakin banyak digunakan dalam sektor pemerintahan karena kemampuannya menjaga transparansi dan keamanan data publik. Pemerintah dapat menggunakan blockchain untuk memastikan keaslian dokumen digital, mengamankan transaksi publik, dan meningkatkan kepercayaan masyarakat terhadap sistem digital mereka. Dengan adopsi yang tepat, efisiensi birokrasi dapat meningkat secara signifikan.",
+    "category": "Teknologi",
+    "status": "published",
+    "created_date": "2025-10-20T08:00:00Z",
+    "updated_date": "2025-10-20T08:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Dampak Kecerdasan Buatan terhadap Dunia Pendidikan di Indonesia",
+    "content": "Kecerdasan buatan (AI) mulai diterapkan dalam dunia pendidikan Indonesia, mulai dari sistem pembelajaran adaptif hingga analisis perilaku siswa. Dengan penerapan AI, pendidik dapat menyesuaikan metode pengajaran sesuai kebutuhan siswa dan menciptakan pengalaman belajar yang lebih personal.",
+    "category": "Edukasi",
+    "status": "published",
+    "created_date": "2025-10-19T12:30:00Z",
+    "updated_date": "2025-10-19T12:30:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Ekonomi Hijau dan Tantangan Implementasinya di Negara Berkembang",
+    "content": "Ekonomi hijau menjadi fokus utama dalam pembangunan berkelanjutan. Namun, penerapan konsep ini di negara berkembang menghadapi tantangan seperti kurangnya investasi hijau, rendahnya kesadaran masyarakat, dan keterbatasan teknologi ramah lingkungan.",
+    "category": "Ekonomi",
+    "status": "draft",
+    "created_date": "2025-10-18T10:00:00Z",
+    "updated_date": "2025-10-18T10:00:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Meningkatkan Keamanan Siber di Era Digitalisasi Layanan Publik",
+    "content": "Serangan siber terhadap sistem publik terus meningkat. Oleh karena itu, penting bagi instansi pemerintah dan swasta untuk menerapkan kebijakan keamanan siber yang kuat, termasuk enkripsi data, pelatihan keamanan bagi karyawan, dan pemantauan sistem secara real-time.",
+    "category": "Keamanan",
+    "status": "published",
+    "created_date": "2025-10-17T09:15:00Z",
+    "updated_date": "2025-10-17T09:15:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Tren Penggunaan Energi Terbarukan di Sektor Industri",
+    "content": "Sektor industri mulai beralih ke sumber energi terbarukan seperti tenaga surya dan angin. Selain ramah lingkungan, penggunaan energi terbarukan juga dapat mengurangi ketergantungan terhadap bahan bakar fosil dan menekan biaya operasional jangka panjang.",
+    "category": "Energi",
+    "status": "published",
+    "created_date": "2025-10-16T14:00:00Z",
+    "updated_date": "2025-10-16T14:00:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Perkembangan Startup Teknologi di Asia Tenggara",
+    "content": "Asia Tenggara menjadi salah satu wilayah dengan pertumbuhan startup tercepat di dunia. Faktor seperti populasi muda, penetrasi internet yang tinggi, dan dukungan pemerintah terhadap inovasi menjadikan kawasan ini sebagai pusat ekonomi digital baru.",
+    "category": "Bisnis",
+    "status": "published",
+    "created_date": "2025-10-15T10:45:00Z",
+    "updated_date": "2025-10-15T10:45:00Z"
+  },
+  {
+    "id": 7,
+    "title": "Etika dalam Penggunaan Data Konsumen di Dunia Digital",
+    "content": "Perusahaan semakin sering mengumpulkan data pengguna untuk kepentingan bisnis, namun hal ini menimbulkan kekhawatiran terkait privasi. Regulasi seperti GDPR menjadi contoh penting dalam menjaga hak-hak pengguna terhadap data pribadi mereka.",
+    "category": "Etika",
+    "status": "draft",
+    "created_date": "2025-10-14T11:20:00Z",
+    "updated_date": "2025-10-14T11:20:00Z"
+  },
+  {
+    "id": 8,
+    "title": "Revolusi Industri 5.0 dan Dampaknya terhadap Tenaga Kerja",
+    "content": "Industri 5.0 menekankan kolaborasi antara manusia dan mesin cerdas. Dengan meningkatnya otomatisasi, pekerja dituntut untuk mengembangkan keterampilan baru agar tetap relevan di pasar kerja yang berubah cepat.",
+    "category": "Industri",
+    "status": "published",
+    "created_date": "2025-10-13T13:00:00Z",
+    "updated_date": "2025-10-13T13:00:00Z"
+  },
+  {
+    "id": 9,
+    "title": "Penerapan Smart City di Kota-Kota Besar Indonesia",
+    "content": "Smart City bertujuan meningkatkan kualitas hidup warga melalui integrasi teknologi informasi, transportasi cerdas, dan pengelolaan energi yang efisien. Beberapa kota di Indonesia seperti Jakarta dan Bandung mulai menerapkan konsep ini secara bertahap.",
+    "category": "Inovasi",
+    "status": "published",
+    "created_date": "2025-10-12T08:45:00Z",
+    "updated_date": "2025-10-12T08:45:00Z"
+  },
+  {
+    "id": 10,
+    "title": "Pentingnya Literasi Digital bagi Generasi Muda di Era AI",
+    "content": "Generasi muda perlu dibekali dengan kemampuan literasi digital agar dapat memanfaatkan teknologi dengan bijak. Literasi digital tidak hanya mencakup kemampuan teknis, tetapi juga pemahaman etika dan tanggung jawab dalam berinternet.",
+    "category": "Pendidikan",
+    "status": "draft",
+    "created_date": "2025-10-11T09:30:00Z",
+    "updated_date": "2025-10-11T09:30:00Z"
+  }
+]
